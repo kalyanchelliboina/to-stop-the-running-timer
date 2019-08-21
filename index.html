@@ -1,0 +1,33 @@
+#to stop the running timer
+
+
+//Create a function
+
+
+
+<script>
+
+    function timeNow(){
+         var time = new Date();
+         var newTime = time.toLocaleTimeString();
+         document.getElementById("show").innerHTML = newTime;
+}
+
+var stop = setInterval(timeNow, 1000);
+
+function stopTime(){
+          clearInterval(stop);
+}
+
+</script>
+
+
+
+//create a button to call the function
+
+
+<button type="stopTime()">Stop Timer</button>
+
+
+
+//Thank you for reading the post.  Have a great day!
